@@ -1,0 +1,26 @@
+<html>
+<body>
+<h1>Javascript events</h1>
+<p>Come here-lets see how to get focus<br/>
+go away-lets see how to lose focus
+</p>
+<p id="p1">
+</p>
+<script>
+setInterval("fokus()",1);
+function fokus()
+{
+var str;
+if(document.hasFocus())
+{
+str="gotFocus";
+}
+else
+{
+str="lostFocus";
+}
+document.getElementById("p1").innerHTML =str;
+}
+</script>
+</body>
+</html>
